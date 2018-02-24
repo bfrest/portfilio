@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		< &#x1F525; Brendon Freston &#x1F525;>
+	</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
+
+<body>
+	<div class="mainContainer">
+		<img class="mainPic" src='http://res.cloudinary.com/bfrest/image/upload/v1519392910/mainPic.png' />
+		<div class="contactCard">
+			<a href="https://twitter.com/b_frest">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://www.instagram.com/bfrest/">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="https://github.com/bfrest">
+				<i class="fa fa-github"></i>
+			</a>
+			<a href="https://codepen.io/bfrest">
+				<i class="fa fa-codepen"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/brendon-freston/">
+				<i class="fa fa-linkedin"></i>
+			</a>
+		</div>
+		<div class="aboutText">
+
+			<h2 class="writingText"></h2>
+			<p>
+				Hi! My name is Brendon I have been coding for over a year and am mostly self taught. Recently I got accepted into DevMountain
+				so I can grow as a developer and meet others who are interested in coding.
+			</p>
+			<p>
+				I have experience in HTML, CSS, JavaScript, PHP, and MYSQL. Currently I am learning React and Node while also sharpening
+				my JavaScript skills.
+			</p>
+
+		</div>
+
+		<script>
+			const textElement = document.querySelector('.writingText');
+			var i = 0;
+			var txt = 'WEB DEVELOPER';
+
+			setInterval(() => {
+				textElement.innerHTML += txt.charAt(i);
+				i++;
+			}, 90);
+		</script>
+</body>
