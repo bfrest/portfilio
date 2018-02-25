@@ -7,6 +7,13 @@
   --red: #e84118;
   --purple: #5f27cd;
   --grayBlue: #3c6382;
+  --amethyst: #9b59b6;
+  --BADA55: #bada55;
+  --honeyGlow: #eab543;
+  --purpleMountain: #786fa6;
+  --sawTooth: #f19066;
+  --softBlue: #778beb;
+  --brewedMonster: #e77f67;
 }
 
 body {
@@ -77,6 +84,11 @@ li {
 
 .writingText {
   height: 1.5em;
+}
+
+.coffeePot {
+  height: 1.3em;
+  padding-top: 20px;
 }
 
 @media (max-width: 320px) {

@@ -43,6 +43,12 @@
 				I have experience in HTML, CSS, JavaScript, PHP, and MYSQL. Currently I am learning React and Node while also sharpening
 				my JavaScript skills.
 			</p>
+			<p>
+				cups of coffee consumed since 2017
+				<br />
+				<img class="coffeePot" src='coffee.svg'>
+				<span class="coffees"></span>
+			</p>
 
 		</div>
 
@@ -50,10 +56,27 @@
 			const textElement = document.querySelector('.writingText');
 			var i = 0;
 			var txt = 'WEB DEVELOPER';
+			const body = document.querySelector('body');
+			const backgroundColors = ['var(--red)', 'var(--gray)', 'var(--yellow)', 'var(--amethyst)', 'var(--BADA55)',
+				'var(--honeyGlow)', 'var(--purpleMountain)', 'var(--sawTooth)', '(--softBlue)', 'var(--brewedMonster)'
+			];
+			const randomInt = Math.floor(Math.random() * backgroundColors.length); // get random int within the length of the array
+			const coffees = document.querySelector('.coffees');
+			const initialDate = new Date(2017, 11, 1); // month is zero-based
+			const now = Date.now();
+			const difference = now - initialDate; // get the difference between december 2017 and today
+			const millisecondsPerDay = 24 * 60 * 60 * 1000;
+			const daysSince = Math.floor(difference / millisecondsPerDay) * 2; // multiply days past by 2 (cups off coffee)
+			coffees.innerHTML = " = " + daysSince; // add the unhealthy amount of coffe i've drank
 
 			setInterval(() => {
-				textElement.innerHTML += txt.charAt(i);
+				textElement.innerHTML += txt.charAt(i); // display the word letter by letter
 				i++;
 			}, 90);
+
+			function changeBackground() {
+				body.style.background = backgroundColors[randomInt]; // set background to a random color
+			}
+			changeBackground();
 		</script>
 </body>
