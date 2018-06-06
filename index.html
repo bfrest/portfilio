@@ -50,19 +50,10 @@
 			const textElement = document.querySelector('.writingText');
 			var i = 0;
 			var txt = 'WEB DEVELOPER';
-			const body = document.querySelector('body');
-			const backgroundColors = ['var(--red)', 'var(--gray)', 'var(--yellow)', 'var(--amethyst)', 'var(--BADA55)',
-				'var(--honeyGlow)', 'var(--purpleMountain)', 'var(--sawTooth)', '(--softBlue)', 'var(--brewedMonster)'
-			];
-			const randomInt = Math.floor(Math.random() * backgroundColors.length); // get random int within the length of the array
+
 			setInterval(() => {
 				textElement.innerHTML += txt.charAt(i); // display the word letter by letter
 				i++;
 			}, 90);
-
-			function changeBackground() {
-				body.style.background = backgroundColors[randomInt]; // set background to a random color
-			}
-			changeBackground();
 		</script>
 </body>

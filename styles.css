@@ -3,23 +3,13 @@
 :root {
   --creme: #f7f1e3;
   --gray: #4b4b4b;
-  --yellow: #fbc531;
-  --red: #e84118;
-  --purple: #5f27cd;
-  --grayBlue: #3c6382;
-  --amethyst: #9b59b6;
-  --BADA55: #bada55;
-  --honeyGlow: #eab543;
-  --purpleMountain: #786fa6;
-  --sawTooth: #f19066;
-  --softBlue: #778beb;
-  --brewedMonster: #e77f67;
 }
 
 body {
-  background: var(--gray);
+  height: 100%;
   color: var(--creme);
   font-family: "Source Code Pro", monospace;
+  margin: 0 auto;
 }
 
 a {
@@ -58,11 +48,13 @@ li {
 }
 
 .mainContainer {
+  background: black;
   display: grid;
-  font-size: 1.5em;
+  font-size: 1.7em;
   grid-template-rows: repeat(auto, 1fr);
   grid-template-columns: minmax(800px, 400px);
   width: 100%;
+  height: 100vh;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -115,6 +107,7 @@ li {
   .aboutText {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    width: 90%;
   }
 
   .writingText {
@@ -160,6 +153,7 @@ li {
     grid-template-rows: repeat(auto, 1fr);
     grid-template-columns: minmax(340px, 400px);
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-content: center;
     justify-items: center;
