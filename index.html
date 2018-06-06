@@ -36,8 +36,9 @@
 
 			<h2 class="writingText"></h2>
 			<p>
-				Hi! My name is Brendon I have been coding for over 2 years and am mostly self taught. Recently I started the DevMountain bootcamp
-				so I can grow my javascript skills and learn all I can about react, node and all the awesome things they can do.
+				Hi! My name is Brendon I have been coding for over 2 years and am mostly self taught. Recently I started the DevMountain
+				bootcamp so I can grow my javascript skills and learn all I can about react, node and all the awesome things they can
+				do.
 			</p>
 			<p>
 				I have experience in HTML, CSS, JavaScript, React, Node, PHP, and MYSQL. If you'd like to see some code head over to my github!
@@ -54,14 +55,6 @@
 				'var(--honeyGlow)', 'var(--purpleMountain)', 'var(--sawTooth)', '(--softBlue)', 'var(--brewedMonster)'
 			];
 			const randomInt = Math.floor(Math.random() * backgroundColors.length); // get random int within the length of the array
-			const coffees = document.querySelector('.coffees');
-			const initialDate = new Date(2017, 11, 1); // month is zero-based
-			const now = Date.now();
-			const difference = now - initialDate; // get the difference between december 2017 and today
-			const millisecondsPerDay = 24 * 60 * 60 * 1000;
-			const daysSince = Math.floor(difference / millisecondsPerDay) * 2; // multiply days past by 2 (cups off coffee)
-			coffees.innerHTML = " = " + daysSince; // add the unhealthy amount of coffe i've drank
-
 			setInterval(() => {
 				textElement.innerHTML += txt.charAt(i); // display the word letter by letter
 				i++;
