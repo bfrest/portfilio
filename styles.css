@@ -12,7 +12,7 @@ body {
   font-family: "Source Code Pro", monospace;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   text-align: center;
   background: white;
@@ -70,7 +70,9 @@ li {
 }
 
 .tech {
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (max-width: 400px) {
