@@ -29,6 +29,10 @@ li {
   list-style: none;
 }
 
+.desc {
+  margin-top: -20px;
+}
+
 .fa {
   width: 55px;
   height: 60px;
