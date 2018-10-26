@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		< &#x1F525; Brendon Freston &#x1F525;/>
+		< &#x1F525; Brendon Freston &#x1F525; />
 	</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,46 +13,34 @@
 </head>
 
 <body>
-	<div class="mainContainer">
-		<div class="contactCard">
-			<a href="https://twitter.com/b_frest">
-				<i class="fa fa-twitter"></i>
-			</a>
-			<a href="https://www.instagram.com/bfrest/">
-				<i class="fa fa-instagram"></i>
-			</a>
-			<a href="https://github.com/bfrest">
-				<i class="fa fa-github"></i>
-			</a>
-			<a href="https://codepen.io/bfrest">
-				<i class="fa fa-codepen"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/brendon-freston/">
-				<i class="fa fa-linkedin"></i>
-			</a>
+	<div class="tech">
+		<h1>Brendon Freston</h1>
+		<div class="tech-logos">
+			<a href="https://reactjs.org/"><img src="react.svg" alt="logo" class="logos" /></a>
+			<a href="https://reactjs.org/"><img src="nodejs-seeklogo.com.svg" alt="logo" class="logos" /></a>
+			<a href="https://reactjs.org/"><img src="javascript-js-seeklogo.com.svg" alt="logo" class="logos" /></a>
+			<a href="redux-seeklogo.com.svg"><img src="redux-seeklogo.com.svg" alt="logo" class="logos" /></a>
+			<a href="https://reactjs.org/"><img src="html5-with-wordmark-color.svg" alt="logo" class="logos" /></a>
+			<a href="https://reactjs.org/"><img src="css3-seeklogo.com.svg" alt="logo" class="logos" /></a>
 		</div>
-		<div class="aboutText">
+	</div>
 
-			<h2 class="writingText"></h2>
-			<p>
-				Hi! My name is Brendon I have been coding for over 2 years and am mostly self taught. Recently I started the DevMountain
-				bootcamp so I can grow my javascript skills and learn all I can about react, node and all the awesome things they can
-				do.
-			</p>
-			<p>
-				I have experience in HTML, CSS, JavaScript, React, Node, PHP, and MYSQL. If you'd like to see some code head over to my github!
-			</p>
+	<div class="contactCard">
+		<a href="https://twitter.com/b_frest">
+			<i class="fa fa-twitter"></i>
+		</a>
+		<a href="https://www.instagram.com/bfrest/">
+			<i class="fa fa-instagram"></i>
+		</a>
+		<a href="https://github.com/bfrest">
+			<i class="fa fa-github"></i>
+		</a>
+		<a href="https://codepen.io/bfrest">
+			<i class="fa fa-codepen"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/brendon-freston/">
+			<i class="fa fa-linkedin"></i>
+		</a>
+	</div>
 
-		</div>
-
-		<script>
-			const textElement = document.querySelector('.writingText');
-			var i = 0;
-			var txt = 'WEB DEVELOPER';
-
-			setInterval(() => {
-				textElement.innerHTML += txt.charAt(i); // display the word letter by letter
-				i++;
-			}, 90);
-		</script>
 </body>
